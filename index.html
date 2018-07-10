@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iconner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form>
+    <label class="ColorField">
+      <span class="ColorField_label">Select a background color</span>
+      <input class="ColorField_input" type="color">
+    </label>
+    <fieldset>
+      <legend>then&hellip;</legend>
+      <label class="FileField">
+        <span class="FileField_label">Select an image to convert</span>
+        <input class="FileField_input" type="file" accept="image/*">
+      </label>
+      <span>OR</span>
+      <span class="DragField">
+        <span class="DragField_label">Drag and drop an image to convert</span>
+        <span class="DragField_input"></span>
+      </span>
+      <span>OR</span>
+      <span class="PasteField">
+        <span class="PasteField_label">Paste an image from your clipboard to convert</span>
+        <span class="PasteField_input">Ctrl+V</span>
+      </span>
+    </fieldset>
+  </form>
+  <output class="result"></output>
+  <script src="script.js"></script>
+</body>
+</html>
