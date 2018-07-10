@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "build:css": "lessc less/styles.less styles.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "chokidar \"**/*.less\" -c \"npm run build:css\""
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
     "url": "https://github.com/tleverett/iconner/issues"
   },
   "homepage": "https://github.com/tleverett/iconner#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
     "less": "^3.6.0"
   }
 }
