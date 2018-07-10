@@ -9,6 +9,8 @@ html {
   padding: 0;
 }
 body {
+  background-image: linear-gradient(-45deg, #FFF 0%, #FFF 25%, #FCFCFC 25%, #FCFCFC 50%, #FFF 50%, #FFF 75%, #FCFCFC 75%, #FCFCFC 100%);
+  background-size: 5rem 5rem;
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.6rem;
   margin: 0;
@@ -181,4 +183,10 @@ body {
   display: block;
   margin: 1em 0;
   text-align: center;
+}
+.Result_link {
+  display: inline-block;
+}
+.Result_image {
+  border: 3.6rem dashed #CCC;
 }

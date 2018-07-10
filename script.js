@@ -27,7 +27,7 @@ const clear = (node) => {
 
 const output = async (file) => {
   if (!file) {
-    console.error('no file found')
+    window.console && console.error('no file found')
     return
   }
 
@@ -48,8 +48,6 @@ const output = async (file) => {
   let width
   let height
 
-  console.log(image.width, image.height)
-
   if (naturalWidth / naturalHeight > MAX_WIDTH / MAX_HEIGHT) {
     width = MAX_WIDTH
     height = (naturalHeight / naturalWidth) * MAX_WIDTH
@@ -69,14 +67,12 @@ const output = async (file) => {
   const context = canvas.getContext('2d')
   context.fillStyle = colorInput.value
   context.fillRect(0, 0, MAX_WIDTH, MAX_HEIGHT)
-  console.log(x, y, width, height)
   context.drawImage(image, x, y, width, height)
 
   const resizedUrl = canvas.toDataURL('image/png')
   
   clear(result)
 
-  resultLink.download = 'icon.png'
   resultLink.href = resizedUrl
 
   resultImage.src = resizedUrl
@@ -86,6 +82,7 @@ const output = async (file) => {
 
 const resultLink = document.createElement('a')
 resultLink.classList.add('Result_link')
+resultLink.download = 'icon.png'
 
 const resultImage = document.createElement('img')
 resultImage.classList.add('Result_image')
@@ -100,6 +97,7 @@ const result = document.querySelector('.Result')
 const colorInput = document.querySelector('.ColorField_input')
 
 const fileInput = document.querySelector('.FileField_input')
+
 fileInput.addEventListener('change', (e) => {
   output(fileInput.files[0])
 })
@@ -130,3 +128,9 @@ document.addEventListener('paste', (e) => {
   output(e.clipboardData.files[0])
 })
 
+const filenameInput = document.querySelector('.FilenameField_input')
+
+filenameInput.addEventListener('input', () => {
+  const filename = filenameInput.value || 'icon'
+  resultLink.download = `${filename}.png`
+})
