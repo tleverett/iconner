@@ -1,3 +1,128 @@
-.Hello {
-  world: hi;
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans';
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+.ColorField {
+  display: block;
+  margin: auto;
+  width: 20rem;
+}
+.ColorField_label {
+  display: block;
+  margin-bottom: 1em;
+}
+.ColorField_input {
+  align-items: center;
+  border: 0.2rem dashed #333;
+  display: flex;
+  font-family: 'Fira Mono', monospace;
+  font-size: 2em;
+  height: 10rem;
+  justify-content: center;
+  width: 20rem;
+}
+.DragField {
+  display: block;
+  margin: auto;
+  width: 20rem;
+}
+.DragField_label {
+  display: block;
+  margin-bottom: 1em;
+}
+.DragField_input {
+  align-items: center;
+  border: 0.2rem dashed #333;
+  display: flex;
+  font-family: 'Fira Mono', monospace;
+  font-size: 2em;
+  height: 10rem;
+  justify-content: center;
+  width: 20rem;
+}
+.DragField_input {
+  font-size: 3.36358566em;
+}
+.FileField {
+  display: block;
+  margin: auto;
+  width: 20rem;
+}
+.FileField_label {
+  display: block;
+  margin-bottom: 1em;
+}
+.FileField_input {
+  align-items: center;
+  border: 0.2rem dashed #333;
+  display: flex;
+  font-family: 'Fira Mono', monospace;
+  font-size: 2em;
+  height: 10rem;
+  justify-content: center;
+  width: 20rem;
+}
+.FileField_input {
+  font-size: 1.68179283em;
+}
+.Options {
+  border: 0.2rem dashed #CCC;
+}
+.Options_wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 48rem) {
+  .Options_wrapper {
+    flex-direction: row;
+  }
+}
+.Options_option {
+  align-self: iniital;
+}
+@media (min-width: 48rem) {
+  .Options_option {
+    align-self: flex-end;
+  }
+}
+.Options_separator {
+  margin: 1em 0;
+}
+@media (min-width: 48rem) {
+  .Options_separator {
+    margin: 0;
+  }
+}
+.PasteField {
+  display: block;
+  margin: auto;
+  width: 20rem;
+}
+.PasteField_label {
+  display: block;
+  margin-bottom: 1em;
+}
+.PasteField_input {
+  align-items: center;
+  border: 0.2rem dashed #333;
+  display: flex;
+  font-family: 'Fira Mono', monospace;
+  font-size: 2em;
+  height: 10rem;
+  justify-content: center;
+  width: 20rem;
 }
