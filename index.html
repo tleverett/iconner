@@ -11,7 +11,7 @@
   <form class="Form">
     <label class="ColorField">
       <span class="ColorField_label">Select a background color</span>
-      <input class="ColorField_input" type="color">
+      <input class="ColorField_input" type="color" value="#FFFFFF">
     </label>
     <fieldset class="Options">
       <legend class="Options_label">then&hellip;</legend>
@@ -43,8 +43,13 @@
         </span>
       </span>
     </fieldset>
+    <label class="FilenameField">
+      <span class="FilenameField_label">Set a filename</span>
+      <input class="FilenameField_input" type="text" placeholder="icon"><span class="FilenameField_suffix">.png</span>
+    </label>
+
+    <output class="Result"></output>
   </form>
-  <output class="Result"></output>
   <script src="script.js"></script>
 </body>
 </html>

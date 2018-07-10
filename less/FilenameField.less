@@ -1,0 +1,26 @@
+@import (reference) 'Field';
+
+.FilenameField {
+  .Field;
+  position: relative;
+
+  &_input {
+    font-size: @f0;
+    height: auto;
+    padding: 1em 0.5em;
+    text-align: right;
+    width: 15rem;
+  }
+
+  &_suffix {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0.2rem 0;
+    bottom: 0;
+    display: block;
+    padding: 1em 0.5em;
+    position: absolute;
+    right: 0;
+    width: 5rem;
+  }
+}

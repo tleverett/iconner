@@ -58,6 +58,9 @@ body {
   font-size: 3.36358566em;
   user-select: none;
 }
+.DragField_input-dragging {
+  border-style: solid;
+}
 .FileField {
   display: block;
   margin: auto;
@@ -79,6 +82,44 @@ body {
 }
 .FileField_input {
   font-size: 1.68179283em;
+}
+.FilenameField {
+  display: block;
+  margin: auto;
+  width: 20rem;
+  position: relative;
+}
+.FilenameField_label {
+  display: block;
+  margin-bottom: 1em;
+}
+.FilenameField_input {
+  align-items: center;
+  border: 0.2rem dashed #333;
+  display: flex;
+  font-family: 'Fira Mono', monospace;
+  font-size: 2em;
+  height: 10rem;
+  justify-content: center;
+  width: 20rem;
+}
+.FilenameField_input {
+  font-size: 1em;
+  height: auto;
+  padding: 1em 0.5em;
+  text-align: right;
+  width: 15rem;
+}
+.FilenameField_suffix {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0.2rem 0;
+  bottom: 0;
+  display: block;
+  padding: 1em 0.5em;
+  position: absolute;
+  right: 0;
+  width: 5rem;
 }
 .Options {
   border: 0.2rem dashed #CCC;
@@ -135,4 +176,9 @@ body {
 }
 .PasteField_input {
   user-select: none;
+}
+.Result {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
 }
