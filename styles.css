@@ -12,7 +12,9 @@ body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.6rem;
   margin: 0;
-  padding: 0;
+  min-width: 32rem;
+  overflow-y: scroll;
+  padding: 1em;
 }
 .ColorField {
   display: block;
@@ -54,6 +56,7 @@ body {
 }
 .DragField_input {
   font-size: 3.36358566em;
+  user-select: none;
 }
 .FileField {
   display: block;
@@ -79,6 +82,10 @@ body {
 }
 .Options {
   border: 0.2rem dashed #CCC;
+  margin: 1em 0;
+}
+.Options_label {
+  text-align: center;
 }
 .Options_wrapper {
   align-items: center;
@@ -125,4 +132,7 @@ body {
   height: 10rem;
   justify-content: center;
   width: 20rem;
+}
+.PasteField_input {
+  user-select: none;
 }
