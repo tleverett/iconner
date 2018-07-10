@@ -8,30 +8,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form>
+  <form class="Form">
     <label class="ColorField">
       <span class="ColorField_label">Select a background color</span>
       <input class="ColorField_input" type="color">
     </label>
-    <fieldset>
-      <legend>then&hellip;</legend>
-      <label class="FileField">
-        <span class="FileField_label">Select an image to convert</span>
-        <input class="FileField_input" type="file" accept="image/*">
-      </label>
-      <span>OR</span>
-      <span class="DragField">
-        <span class="DragField_label">Drag and drop an image to convert</span>
-        <span class="DragField_input"></span>
+    <fieldset class="Options">
+      <legend class="Options_label">then&hellip;</legend>
+      
+      <span class="Options_option">
+        <label class="FileField">
+          <span class="FileField_label">Select an image to convert</span>
+          <input class="FileField_input" type="file" accept="image/*">
+        </label>
       </span>
-      <span>OR</span>
-      <span class="PasteField">
-        <span class="PasteField_label">Paste an image from your clipboard to convert</span>
-        <span class="PasteField_input">Ctrl+V</span>
+
+      <span class="Options_separator">OR</span>
+
+      <span class="Options_option">
+        <span class="DragField">
+          <span class="DragField_label">Drag and drop an image to convert</span>
+          <span class="DragField_input"></span>
+        </span>
+      </span>
+
+      <span class="Options_separator">OR</span>
+
+      <span class="Options_option">
+        <span class="PasteField">
+          <span class="PasteField_label">Paste an image from your clipboard to convert</span>
+          <span class="PasteField_input">Ctrl+V</span>
+        </span>
       </span>
     </fieldset>
   </form>
-  <output class="result"></output>
+  <output class="Result"></output>
   <script src="script.js"></script>
 </body>
 </html>
