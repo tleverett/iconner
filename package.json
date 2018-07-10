@@ -1,0 +1,23 @@
+{
+  "name": "iconner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build:css": "lessc less/styles.less styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tleverett/iconner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tleverett/iconner/issues"
+  },
+  "homepage": "https://github.com/tleverett/iconner#readme",
+  "dependencies": {
+    "less": "^3.6.0"
+  }
+}
