@@ -1,7 +1,7 @@
 @import (reference) 'variables';
 
 .Options {
-  border-style: dashed;
+  border: 0.2rem dashed @light-grey;
 
   &_label {
 
@@ -19,10 +19,18 @@
   }
 
   &_option {
+    align-self: iniital;
 
+    @media @large {
+      align-self: flex-end;
+    }
   }
 
   &_separator {
+    margin: 1em 0;
 
+    @media @large {
+      margin: 0;
+    }
   }
 }

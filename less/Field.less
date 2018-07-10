@@ -1,13 +1,23 @@
+@import (reference) 'variables';
+
 .Field {
   display: block;
+  margin: auto;
+  width: 20rem;
 
   &_label {
     display: block;
+    margin-bottom: 1em;
   }
 
   &_input {
-    display: block;
-    height: 100px;
-    width: 200px;
+    align-items: center;
+    border: 0.2rem dashed @dark-grey;
+    display: flex;
+    font-family: @mono;
+    font-size: @f4;
+    height: 10rem;
+    justify-content: center;
+    width: 20rem;
   }
 }
